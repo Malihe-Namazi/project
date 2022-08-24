@@ -54,11 +54,13 @@ while (counter<=user_count):
             counter-=1
             
     elif(operator=='advanced'):
-        advanced_op=input('please choose your operator(\n log2 \t \tlog10 \t \tradical \nsin \t \tcos \t \ttan \nceil \t \tfloor \t \tfabs \nfact \t \tdegree \t \tbmm \nkmm \t \tmax \t \tmin \nprime \t \teven or odd \n: ')
+        advanced_op=input('please choose your operator(\n log2 \t \tlog10 \t \tradical \nsin \t \tcos \t \ttan \nceil \t \tfloor \t \tfabs \nfact \t \tdegree \t \tbmm \nkmm \t \tmax \t \tmin \nprime \t \teven or odd \t \t e \t pi \n: ')
         
         if(advanced_op=='prime' or advanced_op=='even or odd'):
            number=int(input('please enter your number:'))
-          
+        
+        elif(advanced_op=='pi' or advanced_op=='e'):
+            print(' number is:') 
                         
         elif(advanced_op=='bmm' or advanced_op=='kmm'):
             num1=int(input('please enter an intiger number:'))
@@ -148,7 +150,14 @@ while (counter<=user_count):
             if(number%2==0):
                 print('your number is even.')
             else:
-                print('your number id odd.')   
+                print('your number id odd.') 
+                
+        elif(advanced_op=='e'):
+              print(math.e)       
+                          
+        elif(advanced_op=='pi'):
+            print(math.pi)
+                              
                           
         else:
             print('please try again')
